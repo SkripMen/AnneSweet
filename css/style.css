@@ -137,9 +137,56 @@ line-height: 28px;
 .cake{background: url(../img/cake.png)no-repeat center center;}
 
 .more{
+    width: max-content;
     font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
+padding: 12px 58px;
+border: 1px solid black;
+border-radius: 10px;
+margin: 104px auto;
+}
+
+.about{
+    width: 1180px;
+height: 797px;
+    margin: 0 auto;
+}
+
+.about h1{
+    font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 55px;
+margin: 0 auto;
+width: max-content;margin-bottom: 49px;
+}
+.aboutContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.disc{
+    margin: 30px 20px;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+}
+
+.infor{
+    font-family: Open Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+border-left: 3px solid black;
+padding-left: 20px;
+padding-top: 30px;
+margin-top: 71px;
 }
