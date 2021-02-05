@@ -274,7 +274,7 @@ line-height: 55px;
 }
 
 .form{
-    padding: 53px 0 0 83px;
+    padding: 53px 83px;
     width: 996px;
     height: 637px;
     background: url(../img/write_me.png);
@@ -283,7 +283,7 @@ line-height: 55px;
 .form>p{
     font-family: Spectral SC;
 font-style: normal;
-font-weight: bold;
+/* font-weight: bold; */
 font-size: 18px;
 line-height: 28px;
 }
@@ -293,9 +293,10 @@ line-height: 28px;
 grid-template-columns: repeat(2,1fr);}
 
 .form input{
-    opacity: .7;
+    opacity: .5;
     border-radius: 10px;
     border: 1px solid #000;
+    padding: 20px;
 }
 .mes{
     margin: 20px 0;
@@ -306,7 +307,48 @@ grid-template-columns: repeat(2,1fr);}
     height: 63px;
 }
 .max{
-    width: 873px;
+    width: 825px;
     height: 293px;
+    padding-top: 0;
 }
 .names{margin-bottom: 12px;}
+
+.enter{margin: 20px auto;
+    /* margin-top: 20px; */
+    width: max-content;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+padding: 12px 60px;
+border: 1px solid black;
+border-radius: 10px;
+cursor: pointer;
+}
+
+footer{
+    
+    margin-top: 81px;
+    width: 100%;
+height: 181px;
+background: #D7D1C9;
+}
+
+footer >nav > ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer> nav> ul> li{
+padding: 65px 60px;
+}
+
+.hovers:hover{
+    transition: background .1s linear;
+    background: #000;
+    color: #fff;
+}
