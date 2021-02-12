@@ -14,18 +14,18 @@
 
 <body>
     <header>
-        <div class="logo"><img src="img/logo.svg" alt=""></div>
+        <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
         <div class="nav">
             <ul>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Написать мне</a></li>
+                <li><a href="#posts">Статьи</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#write_me">Написать мне</a></li>
             </ul>
         </div>
     </header>
     <div class="article">
-        <div class="head">
+        <div class="head" id="posts">
             <h2>Все статьи</h2>
             <div class="filt">
                 <p>Выбрать тему</p>
@@ -79,10 +79,29 @@
                     </div>
                 </div>
             </div>
+            <!-- ещё статьи -->
+            <div class="articles_2" id="ninja">
+                <div class="cards flowers">
+                    <h1>Снимки на плёнку</h1>
+                    <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+                    <div class="inf">
+                        <div class="teg">Теги: фотографии</div>
+                        <div class="date">29.06.2020</div>
+                    </div>
+                </div>
+                <div class="cards cake">
+                    <h1>Снимки на плёнку</h1>
+                    <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+                    <div class="inf">
+                        <div class="teg">Теги: фотографии</div>
+                        <div class="date">29.06.2020</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="more hovers">Показать ещё</p>
+        <p class="more hovers" id="port-butt-id">Показать ещё</p>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h1>Обо мне</h1>
         <div class="aboutContent">
             <img src="img/about.png" alt="">
@@ -117,7 +136,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h1>Портфолио</h1>
         <div class="grid_photo">
             <div class="photo one_photo">
@@ -142,10 +161,33 @@
                         запомнить информацию.</p>
             </div>
         </div>
-        <p class="more hovers">Показать ещё</p>
+        <div class="grid_photo" id="ninja1">
+            <div class="photo one_photo">
+                <h2>Блог HTML Academy</h1>
+                    <h3>«Как учиться продуктивно»</h3>
+                    <p>Про основные методы обучения,
+                        которые помогут быстро и надолго
+                        запомнить информацию.</p>
+            </div>
+            <div class="photo two_photo">
+                <h2>Блог HTML Academy</h1>
+                    <h3>«Как учиться продуктивно»</h3>
+                    <p>Про основные методы обучения,
+                        которые помогут быстро и надолго
+                        запомнить информацию.</p>
+            </div>
+            <div class="photo three_photo">
+                <h2>Блог HTML Academy</h1>
+                    <h3>«Как учиться продуктивно»</h3>
+                    <p>Про основные методы обучения,
+                        которые помогут быстро и надолго
+                        запомнить информацию.</p>
+            </div>
+        </div>
+        <p class="more hovers" id="post-butt-id">Показать ещё</p>
     </div>
 
-    <div class="write_me">
+    <div class="write_me" id="write_me">
         <h1>Написать мне</h1>
         <div class="form">
             <div class="col_grid">
@@ -155,7 +197,7 @@
                 </div>
                 <div class="mail">
                     <p class="names">Email</p>
-                    <input type="text" class="mini" placeholder="google@gmail.com">
+                    <input type="email" class="mini" placeholder="google@gmail.com">
                 </div>
             </div>
             <p class="mes">Сообщение</p>
@@ -174,7 +216,7 @@
             </ul>
         </nav>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

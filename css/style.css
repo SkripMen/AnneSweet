@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -42,7 +42,7 @@ header {
 
 .article {
     width: 1200px;
-    height: 1290px;
+    height: max-content;
     margin: 83px auto;
 }
 
@@ -120,8 +120,15 @@ header {
 }
 
 .articles_2 {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 23px;
+    margin-bottom: 20px;
+}
+#ninja,
+#ninja1{
+    display: none;
 }
 
 .cards {
@@ -222,7 +229,6 @@ header {
 .portfolio {
     margin: 85px auto;
     width: 1200px;
-    height: 779px;
 }
 
 .portfolio h1 {
@@ -238,6 +244,7 @@ header {
 .grid_photo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
 }
 
 .photo {
